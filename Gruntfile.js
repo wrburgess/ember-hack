@@ -42,6 +42,38 @@ module.exports = function(grunt){
             }
           }
         },
+        watch: {
+          handlebars: {
+            files: 'app/templates/*.hbs',
+            tasks: ['ember_handlebars']
+          },
+          haml: {
+            files: 'app/html/*.haml',
+            tasks: ['haml']
+          },
+          javascripts: {
+            files: [
+                    'libs/jquery-2.0.3.js',
+                    'libs/handlebars-1.0.0.js',
+                    'libs/ember-1.0.0.js',
+                    'libs/ember-data-1.0.0.beta.3.js',
+                    'app/app.js',
+                    'app/router.js',
+                    'app/store.js',
+                    'app/components/*.js',
+                    'app/controllers/*.js',
+                    'app/helpers/*.js',
+                    'app/models/*.js',
+                    'app/routes/*.js',
+                    'app/views/*.js'
+                ],
+            tasks: ['concat', 'uglify']
+          },
+          css: {
+            files: 'app/stylesheets/*.scss',
+            tasks: ['sass', 'cssmin']
+          }
+        },
         haml: {
             dist: {
                 files: {
@@ -81,6 +113,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-haml');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-ember-handlebars');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'cssmin', 'haml', 'ember_handlebars']);
     grunt.registerTask('specs', ['concat', 'uglify', 'sass', 'cssmin', 'haml', 'jasmine']);
