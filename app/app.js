@@ -1,0 +1,1 @@
+window.MassTransit = Ember.Application.create();

@@ -1,0 +1,1 @@
+MassTransit.ApplicationAdapter = DS.FixtureAdapter.extend();

@@ -1,0 +1,16 @@
+<h1>Dashboards</h1>
+
+<ul>
+  {{#each itemController="dashboard"}}
+    <li {{bind-attr class="isEditing:editing"}}>
+      {{#if isEditing}}
+        <input class='edit'>
+      {{else}}
+        <label>{{title}}</label>
+      {{/if}}
+    </li>
+  {{/each}}
+  <li>
+    {{input type="text" id="new-dashboard" placeholder="Title of Dashboard" value=newTitle action="createDashboard"}}
+  </li>
+</ul>
