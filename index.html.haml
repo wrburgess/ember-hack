@@ -1,0 +1,20 @@
+%html
+  %head
+    %meta{ charset: "utf-8" }
+    %title Ember Hack
+    %link{ rel: "stylesheet", href: "application.css" }
+  %body
+    %header
+      %h1 Header
+
+    #main
+      %script{ type: "text/x-handlebars", "data-template-name" => "application" }
+        {{outlet}}
+
+    %footer
+      %p Footer
+
+    %script{ src: "application.js" }
+    %script{ src: "templates.js" }
+    :javascript
+      MassTransit.advanceReadiness();

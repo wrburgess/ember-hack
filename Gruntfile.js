@@ -7,17 +7,17 @@ module.exports = function(grunt){
                 src: [
                     'libs/jquery-2.0.3.js',
                     'libs/handlebars-1.0.0.js',
-                    'libs/ember-1.0.0.js',
+                    'libs/ember-1.2.0.js',
                     'libs/ember-data-1.0.0.beta.3.js',
                     'app/app.js',
                     'app/router.js',
-                    'app/store.js',
                     'app/components/*.js',
                     'app/controllers/*.js',
                     'app/helpers/*.js',
                     'app/models/*.js',
+                    'app/store.js',
                     'app/routes/*.js',
-                    'app/views/*.js'
+                    'app/views/**/*.js'
                 ],
                 dest: 'public/application.js'
             }
@@ -38,17 +38,17 @@ module.exports = function(grunt){
           },
           compile: {
             files: {
-              'public/templates.js': 'app/templates/*.hbs'
+              'public/templates.js': 'app/templates/**/*.hbs'
             }
           }
         },
         watch: {
           handlebars: {
-            files: 'app/templates/*.hbs',
+            files: ['app/templates/**/*.hbs'],
             tasks: ['ember_handlebars']
           },
           haml: {
-            files: 'app/html/*.haml',
+            files: ['app/html/*.haml', 'index.html.haml'],
             tasks: ['haml']
           },
           javascripts: {
@@ -59,13 +59,13 @@ module.exports = function(grunt){
                     'libs/ember-data-1.0.0.beta.3.js',
                     'app/app.js',
                     'app/router.js',
-                    'app/store.js',
                     'app/components/*.js',
                     'app/controllers/*.js',
                     'app/helpers/*.js',
                     'app/models/*.js',
+                    'app/store.js',
                     'app/routes/*.js',
-                    'app/views/*.js'
+                    'app/views/**/*.js'
                 ],
             tasks: ['concat', 'uglify']
           },
@@ -77,7 +77,8 @@ module.exports = function(grunt){
         haml: {
             dist: {
                 files: {
-                    'public/mock.html': 'app/html/mock.haml'
+                    'public/mock.html': 'app/html/mock.haml',
+                    'public/index.html': 'index.html.haml'
                 }
             }
         },
@@ -86,8 +87,8 @@ module.exports = function(grunt){
             src: '/libs/jasmine-1.3.0/*.js',
             options: {
               version: '1.3.1',
-              specs: 'spec/default_spec.js',
-              helpers: 'spec/spec_helper.js'
+              specs: 'spec/**/*spec.js',
+              helpers: 'spec/helpers/*.js'
             }
           }
         },

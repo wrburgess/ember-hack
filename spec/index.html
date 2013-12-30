@@ -3,18 +3,27 @@
 <html>
 <head>
   <title>Jasmine Spec Runner</title>
-  
+
   <!-- testing library -->
-  <link rel="stylesheet" href="/libs/jasmine-1.3.0/jasmine.css">
-  <script src="/libs/jasmine-1.3.0/jasmine.js"></script>
-  <script src="/libs/jasmine-1.3.0/jasmine-html.js"></script>
+  <link rel="stylesheet" href="../libs/jasmine-1.3.0/jasmine.css">
+  <script src="../libs/jasmine-1.3.0/jasmine.js"></script>
+  <script src="../libs/jasmine-1.3.0/jasmine-html.js"></script>
 
   <!-- include source files here... -->
-  <script src="/public/application.js"></script>
+  <script src="../public/application.js"></script>
+  <script src="../public/templates.js"></script>
 
-  <!-- include spec files here... -->
-  <script src="spec_helper.js"></script>
-  <script src="default_spec.js"></script>
+  <!-- Helpers -->
+  <script src="helpers/jasmine_test_adapter.js"></script>
+  <script src="helpers/fixtures.js"></script>
+  <script src="helpers/jasmine_fixtures.js"></script>
+  <script src="helpers/spec_helper.js"></script>
+
+  <!-- Ember Models -->
+  <script src="models/dashboard_spec.js"></script>
+
+  <!-- Ember Views -->
+  <script src="views/dashboard_view_spec.js"></script>
 
   <script>
     (function() {
@@ -47,6 +56,6 @@
 
 </head>
 
-<body>
+<body id="main">
 </body>
 </html>

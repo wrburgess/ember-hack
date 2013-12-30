@@ -1,6 +1,7 @@
 MassTransit.DashboardsController = Ember.ArrayController.extend({
   actions: {
     createDashboard: function() {
+      console.log("MassTransit.DashboardsController #createDashboard");
       var title = this.get('newTitle');
 
       var dashboard = this.store.createRecord('dashboard', {
@@ -14,3 +15,10 @@ MassTransit.DashboardsController = Ember.ArrayController.extend({
     }
   }
 });
+
+// MassTransit.DashboardsIndexController = Ember.ArrayController.extend({
+//   beforeModel: function() {
+//     console.log("dashboard index controller beforeModel");
+//     this.modelFor("dashboards");
+//   }
+// });

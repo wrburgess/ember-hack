@@ -1,5 +1,3 @@
-MassTransit.ApplicationAdapter = DS.FixtureAdapter.extend();
-
 MassTransit.Dashboard.FIXTURES = [
   {
     id: 1,
