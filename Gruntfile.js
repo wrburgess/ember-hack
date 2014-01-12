@@ -6,9 +6,9 @@ module.exports = function(grunt){
           dist: {
               src: [
                   'libs/jquery-2.0.3.js',
-                  'libs/handlebars-1.0.0.js',
-                  'libs/ember-1.2.0.js',
-                  'libs/ember-data-1.0.0.beta.3.js',
+                  'libs/handlebars-1.3.0.js',
+                  'libs/ember-1.3.0.js',
+                  'libs/ember-data-1.0.0-beta.5.js',
                   'app/app.js',
                   'app/router.js',
                   'app/components/*.js',
