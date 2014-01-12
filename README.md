@@ -11,7 +11,6 @@
 * EmberData 1.0.0-beta.5 [repo](), [site](https://github.com/emberjs/data)
 * Jasmine 2.0 [repo](https://github.com/pivotal/jasmine), [site](http://jasmine.github.io/2.0/introduction.html)
 
-
 ## TOC
 
 * [Setting Up Grunt](docs/setting_up_grunt.md)
