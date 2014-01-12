@@ -1,29 +1,31 @@
 # Ember Hack
 
-## Grunt Setup
+## Tech
 
-For help, visit [Grunt.js: Getting Started](http://gruntjs.com/getting-started)  
+* Grunt 0.4.2 [repo](http://gruntjs.com) [site](http://gruntjs.com)
+* Haml [repo](https://github.com/haml/haml) [site](http://haml.info)
+* Sass [repo](https://github.com/nex3/sass) [site](http://sass-lang.com)
+* jQuery 2.0.3 [repo](https://github.com/jquery/jquery) [site](http://jquery.com)
+* Handlebars.js 1.3.0 [repo](https://github.com/wycats/handlebars.js/) [site](http://handlebarsjs.com)
+* Ember.js 1.3.0 [repo](https://github.com/emberjs/ember.js) [site](http://emberjs.com)
+* EmberData 1.0.0-beta.5 [repo]() [site](https://github.com/emberjs/data)
+* Jasmine 2.0 [repo](https://github.com/pivotal/jasmine) [site](http://jasmine.github.io/2.0/introduction.html)
 
-Install Grunt
 
-```
-npm install grunt@0.4.2 --save-dev
-```
+## TOC
 
-Install the Grunt CLI
+* [Setting Up Grunt](docs/setting_up_grunt.md)
 
-```
-npm install -g grunt-cli
-```
+## Tips
 
-Install the npm modules
+* For live template updates: ```grunt watch```
+* Run a quick n dirty http server: ```ruby -run -e httpd . -p 12345```
 
-```
-npm install grunt-contrib-concat --save-dev
-npm install grunt-contrib-uglify --save-dev
-npm install grunt-contrib-sass --save-dev
-npm install grunt-contrib-cssmin --save-dev
-npm install grunt-contrib-haml --save-dev
-npm install grunt-contrib-jasmine --save-dev
-npm install grunt-contrib-jasmine --save-dev
-```
+## ToDos
+
+* Add Grunt task for pushing finished assets to CDN
+* Add system for production use of CDN assets
+* Add system for production use of minified CDN assets
+* Add convention for app config settings
+* Add convention for env var settings
+* Add parallel tasks for speed
