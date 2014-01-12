@@ -8923,7 +8923,7 @@ define("rsvp/promise",
     /**
       Promise objects represent the eventual result of an asynchronous operation. The
       primary way of interacting with a promise is through its `then` method, which
-      registers callbacks to receive either a promiseâ€™s eventual value or the reason
+      registers callbacks to receive either a promise’s eventual value or the reason
       why the promise cannot be fulfilled.
 
       Terminology
@@ -14429,7 +14429,7 @@ Ember.Array = Ember.Mixin.create(Ember.Enumerable, {
     This returns the objects at the specified indexes, using `objectAt`.
 
     ```javascript
-    var arr =Â ['a', 'b', 'c', 'd'];
+    var arr = ['a', 'b', 'c', 'd'];
     arr.objectsAt([0, 1, 2]);  // ["a", "b", "c"]
     arr.objectsAt([2, 3, 4]);  // ["c", "d", undefined]
     ```
@@ -25639,7 +25639,7 @@ define("metamorph",
     "use strict";
     // ==========================================================================
     // Project:   metamorph
-    // Copyright: Â©2014 Tilde, Inc. All rights reserved.
+    // Copyright: ©2014 Tilde, Inc. All rights reserved.
     // ==========================================================================
 
     var K = function() {},
@@ -27952,7 +27952,7 @@ EmberHandlebars.registerHelper('unless', function unlessHelper(context, options)
   ```
 
   All three strategies - string return value, boolean return value, and
-  hard-coded value â€“ can be combined in a single declaration:
+  hard-coded value – can be combined in a single declaration:
 
   ```handlebars
   <img {{bind-attr class=":class-name-to-always-apply view.someBool:class-name-if-true view.someProperty"}}>
