@@ -9,7 +9,7 @@
 * Handlebars.js 1.3.0 [repo](https://github.com/wycats/handlebars.js/), [site](http://handlebarsjs.com)
 * Ember.js 1.3.0 [repo](https://github.com/emberjs/ember.js), [site](http://emberjs.com)
 * EmberData 1.0.0-beta.5 [repo](), [site](https://github.com/emberjs/data)
-* Jasmine 2.0 [repo](https://github.com/pivotal/jasmine), [site](http://jasmine.github.io/2.0/introduction.html)
+* Jasmine 1.3.1 [repo](https://github.com/pivotal/jasmine), [site](http://jasmine.github.io/2.0/introduction.html)
 
 ## TOC
 
